@@ -1,0 +1,73 @@
+{
+	"appName" : "OPCUA_Communication",
+	"description" : "Sample configuration file for Data Simulation",
+	"serverConfig" :
+	{
+			"port" : 4840,
+			"certificateFile": "./cert/cert.pem",
+			"privateKeyFile": "./cert/private_key.pem",
+			"allowAnonymous" : true,
+			"userList" :
+			[
+				{
+					"user" : "Siemens" ,
+					"password" : "Siemens"
+				},
+				{
+					"user" : "user" ,
+					"password" : "user"
+				}
+			]
+	},
+	"SimulationData" :
+	[
+		{
+			"deviceName" : "Device_1",
+			"variablesList":
+			[
+				{
+						"name": "Variable_1",
+						"dataType": "Double",
+                        "writable": false,
+                        "value": 1
+				},
+				{
+						"name": "Variable_2",
+						"dataType": "Double",
+                        "writable": true,
+                        "value": 2
+				},
+				{
+						"name": "Variable_3",
+						"dataType": "Double",
+                        "writable": true,
+                        "value": 3
+				}
+			]
+		},
+		{
+			"deviceName" : "Device_2",
+			"variablesList":
+			[
+				{
+						"name": "Variable_1",
+						"dataType": "Double",
+                        "writable": false,
+                        "value": 600
+				},
+				{
+						"name": "Variable_2",
+						"dataType": "Double",
+                        "writable": true,
+                        "value": 5
+				},
+				{
+						"name": "Variable_3",
+						"dataType": "Double",
+                        "writable": true,
+                        "value": 6
+				}
+			]
+		}
+	]
+}
